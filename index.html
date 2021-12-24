@@ -5,26 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talking Banana</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Talking Banana</h1>
+    <h1 class="hero">Talking Banana</h1>
 
     <!-- Creating a textarea in the html -->
-    <h3>Input</h3>
     <textarea id="txt-input" cols="30" rows="10" placeholder="Write something down we will translate that in banana language"></textarea>
 
     <!-- Translate Button -->
     <br>
-    <button id="btn-translate">Translate</button>
+    <button class= "Button" id="btn-translate">Translate</button>
 
 
     <!-- Output Block -->
-   <div>
-       <h3>Output</h3>
-       <p id="txt-output">
+   <div class="output-div">
+       <span class="keyword">Translation will come here 👇🏽</span>
+        <p id="txt-output">
 
-       </p>
+        </p>
    </div>
+
+
+   <footer>
+       <h3> <strong>About</strong></h3>
+       <p>Are you a fan of minions? Did you know that the gibberish they say is an actual language. Use the translator to convert your text from English to Minion speak or Banana language.
+       </p>
+   </footer>
+   <!-- <div class="about hero">
+        This is somethbing new okay
+   </div> -->
 
     <!-- Why is script tag in the end? So that it loads last, and the web pages load fast. -->
     <script src="/app.js"></script>
